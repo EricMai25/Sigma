@@ -1,6 +1,7 @@
 import React from 'react'
-import In from './In.jsx'
-import { Container, Button } from 'react-bootstrap';
+import './Front.css'
+import { Container, Button, Jumbotron } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
 class Front extends React.Component {
     constructor(props) {
@@ -11,9 +12,26 @@ class Front extends React.Component {
 
     render() {
         return (
-            <div>
-                {this.props.logging ? <In log={this.props.log}/> : <h2>Welcome To Sigma Please Login</h2>}
-            </div>
+            <Container>
+                <Jumbotron>
+                    <h1>Welcome To Sigma</h1>
+                    <p>
+                        Place for secure Contracts
+                    </p>
+                    <p>
+                        {this.props.logging
+                            ? <Link to='/Dash'>
+                                <Button>To Dashboard</Button>
+                            </Link>
+                            : <Link to='/Login'>
+                                <Button>Login</Button>
+                            </Link>
+
+                        }
+
+                    </p>
+                </Jumbotron>
+            </Container>
         )
     }
 }

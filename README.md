@@ -1,37 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### How to Run
 
-In the project directory, you can run:
+Npm Install
+Npm Start
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### Skeleton
-
-Description: Basic - Application used to send and receive contracts with payment. The application is a middle man between 2 contractors. One individual can create and write up a description of a contract and add the payment amount to the contract. Application will hold onto this amount until both parties has agreed that the contract is fulfilled. 
-
-Advance - Application will also run a timer on the contract and will inform both parties when date is coming and needs to be fulfilled. An extension can be agreed upon by both parties if the contractor wants to extend. 
 
 ### Start
 
@@ -45,6 +18,43 @@ Cost
 Description
 Agreement form
 Signature
+### Home
+
+Basic front page leading to login if not login or go to dashboard if logged in.
+
+### Function
+
+Basic idea: Contracting with one another.
+Application fundementally allowes an individual to create a new contract binding 2 individuals. The contract will consist of amount owed and the date of completion. When both parties complete their end the money will be dispursed to the individuals. Current froms of pages would include the login page and dashboard for main functionality. The ability to keep track of your balance in the dashboard as well as current contract tickets as well as completed ones.
+
+
+###First
+
+Building the skeleton of the from to encompass all information needed by the rest of the components due to the contract form being the main driver of the application
+
+### Second
+
+Creating a dashboard and also 2 individuals as testing for fulfilling the contract. Both individuals need certain parameters for the application to work like balance and friends list.
+
+### Third
+
+When creating the form there has to be all data filled as the rest of the application needs that type of data. After a form is created the application redirects to the dashboard with an updated dash for both parties. They are able to see if they sent an application or if they have recieved one.
+
+### Fourth
+
+The step after that is when a completed contract is fulfilled the amount is added and subtracted from the relative parties balance.
+
+
+
+###Concepts That needed more Time
+
+Currently its a minimal viable product. There are things i would like to make that will help with the functionality. Currently it does not check if you have the amount in your balance to create a contract with the amount written down and would need to redo some code for that. The css might need a little more work as most of the time was spent figuring out where everything goes and how everything connected to each other. The same goes for react router and such as redirecting and directing to different areas of the page took a bit to iron out.
+
+Another functionality I would like to improve on is the ability for both parties to check complete before the contract is fulfilled. Due to not implementing a database it is quite hard to do certain things with the application at the moment and would like to add that into to habdle all the contracts being delted and added.
+
+
+
+
 
 
 

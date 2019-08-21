@@ -1,0 +1,21 @@
+.user {
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.col {
+    height: 100%;
+}
+
+.ConForm {
+    background-color: #43484d;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 80vh;
+}
+
+.formbox {
+    padding-top: 100px;
+    color: white;
+    max-height: 100vh;
+}
