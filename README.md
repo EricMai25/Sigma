@@ -30,7 +30,7 @@ Basic idea: Contracting with one another.
 Application fundementally allowes an individual to create a new contract binding 2 individuals. The contract will consist of amount owed and the date of completion. When both parties complete their end the money will be dispursed to the individuals. Current froms of pages would include the login page and dashboard for main functionality. The ability to keep track of your balance in the dashboard as well as current contract tickets as well as completed ones.
 
 
-###First
+### First
 
 Building the skeleton of the from to encompass all information needed by the rest of the components due to the contract form being the main driver of the application
 
@@ -48,7 +48,7 @@ The step after that is when a completed contract is fulfilled the amount is adde
 
 
 
-###Concepts That needed more Time
+### Concepts That needed more Time
 
 Currently its a minimal viable product. There are things i would like to make that will help with the functionality. Currently it does not check if you have the amount in your balance to create a contract with the amount written down and would need to redo some code for that. The css might need a little more work as most of the time was spent figuring out where everything goes and how everything connected to each other. The same goes for react router and such as redirecting and directing to different areas of the page took a bit to iron out.
 
