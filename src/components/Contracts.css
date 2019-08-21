@@ -1,0 +1,15 @@
+.cont {
+    display: inline-block;
+    max-width: 20vh;
+    max-height: 50vh;
+    margin: 5px;
+}
+
+.card-img-top {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.card-body {
+    padding: 5px;
+}

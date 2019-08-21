@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import './Login.css'
 
 class Login extends React.Component {
     constructor(props) {
@@ -12,23 +13,26 @@ class Login extends React.Component {
     render() {
         return (
             <Container>
-                <h2>Login As</h2>
+                <h2>Login as</h2>
                 <Row>
                     <Col>
-                        <img src={this.props.a1.Img} alt="Smiley face" height="300" width="300" />
-                        <Button onClick={
-                            e => { this.props.login(this.props.a1) }
-                        }>
-                            <Link to='/' >{this.props.a1.First + ' ' + this.props.a1.Last}</Link>
-                        </Button>
+                        <img src={this.props.a1.Img} alt="Smiley face" height="150" width="150" />
+                        <Link to='/' >
+                            <Button onClick={
+                                e => { this.props.login(this.props.a1.id) }
+                            }>
+                                {this.props.a1.First + ' ' + this.props.a1.Last}
+                            </Button>
+                        </Link>
                     </Col>
                     <Col>
-                        <img src={this.props.a2.Img} alt="Smiley face" height="300" width="300" />
-                        <Button onClick={
-                            e => { this.props.login(this.props.a2) }
-                        }>
-                            <Link to='/' >{this.props.a2.First + ' ' + this.props.a2.Last}</Link>
-                        </Button>
+                        <img src={this.props.a2.Img} alt="Smiley face" height="150" width="150" />
+                        <Link to='/'>
+                            <Button onClick={
+                                e => { this.props.login(this.props.a2.id) }
+                            }> {this.props.a2.First + ' ' + this.props.a2.Last}
+                            </Button>
+                        </Link>
                     </Col>
                 </Row>
             </Container>
