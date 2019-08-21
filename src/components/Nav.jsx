@@ -1,5 +1,6 @@
 import React from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import {Link} from 'react-router-dom';
 
 class Navi extends React.Component {
     constructor(props) {
@@ -14,9 +15,9 @@ class Navi extends React.Component {
             <Navbar expand="sm" bg="dark" variant="dark">
                 <Navbar.Brand>Navbar</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link>Home</Nav.Link>
-                    <Nav.Link>Dashboard</Nav.Link>
-                    <Nav.Link>Account</Nav.Link>
+                    <Link to='/'>Home</Link>
+                    <Link to='/Dash'>Dashboard</Link>
+                    <Link to='/Login'>Login</Link>
                 </Nav>
             </Navbar>
         )

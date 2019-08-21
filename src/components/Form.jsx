@@ -40,42 +40,41 @@ class Contract extends React.Component {
                     </Form.Row>
 
                     <Form.Group controlId="formGridDescription">
-                        <Form.Label>Contract Details</Form.Label>
+                        <Form.Label>ConStract Details</Form.Label>
                         <Form.Control onChange={e => {
-                                this.setState({ Detail : e.target.value })
-                            }} as="textarea" rows="10" />
+                            this.setState({ Detail: e.target.value })
+                        }} as="textarea" rows="10" />
                     </Form.Group>
 
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridCity">
                             <Form.Label>Contract Amount</Form.Label>
                             <Form.Control onChange={e => {
-                                this.setState({ Amount : e.target.value })
+                                this.setState({ Amount: e.target.value })
                             }} />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridState">
                             <Form.Label>Date Finished</Form.Label>
                             <Form.Control onChange={e => {
-                                this.setState({ Date : e.target.value })
+                                this.setState({ Date: e.target.value })
                             }}
-                            placeholder={new Date().toJSON().slice(0, 10).replace(/-/g, '/')} />
+                                placeholder={new Date().toJSON().slice(0, 10).replace(/-/g, '/')} />
                         </Form.Group>
                     </Form.Row>
 
                     <Form.Group id="formGridCheckbox">
                         <Form.Check onChange={e => {
-                                let yes
-                                if(!this.state.Agree){
-                                    yes = true
-                                } else {
-                                    yes = false
-                                }
-                                this.setState({ Agree : yes })
-                            }}
+                            let yes
+                            if (!this.state.Agree) {
+                                yes = true
+                            } else {
+                                yes = false
+                            }
+                            this.setState({ Agree: yes })
+                        }}
                             type="checkbox" label="I agree to the terms provided" />
                     </Form.Group>
-
                     <Button onClick={
                         e => {
                             console.log(this.state)

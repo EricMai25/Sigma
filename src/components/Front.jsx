@@ -2,7 +2,7 @@ import React from 'react'
 import In from './In.jsx'
 import { Container, Button } from 'react-bootstrap';
 
-class Dash extends React.Component {
+class Front extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -11,12 +11,12 @@ class Dash extends React.Component {
 
     render() {
         return (
-         <Container>
-             <h2>{this.props.log.First}</h2>
-         </Container>
+            <div>
+                {this.props.logging ? <In log={this.props.log}/> : <h2>Welcome To Sigma Please Login</h2>}
+            </div>
         )
     }
 }
 
-export default Dash
+export default Front
 
